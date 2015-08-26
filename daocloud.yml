@@ -1,0 +1,12 @@
+image: daocloud/ci-golang:1.4
+
+services:
+# using default docker-link env
+env:
+
+install:
+
+before_script:
+
+script:
+  - go test .
