@@ -9,5 +9,4 @@ install:
 before_script:
 
 script:
-  - cd /usr/src/app
-  - go test .
+  - go test docker-golang-build
