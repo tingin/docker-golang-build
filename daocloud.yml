@@ -7,6 +7,10 @@ env:
 install:
 
 before_script:
+  - mkdir -p /gopath/src/docker-golang-build
+  - mv ./* /gopath/src/docker-golang-build
 
 script:
+  - export GOPATH=/gopath
+  - go get -t docker-golang-build
   - go test docker-golang-build
