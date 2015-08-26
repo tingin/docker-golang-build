@@ -9,4 +9,5 @@ install:
 before_script:
 
 script:
-  - go test /usr/src/app
+  - cd /usr/src/app
+  - go test .
