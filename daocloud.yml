@@ -21,3 +21,4 @@ script:
   - export GOPATH=/gopath
   - go get -t docker-golang-build
   - go test docker-golang-build
+  - cat chromedriver.log
