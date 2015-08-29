@@ -1,2 +1,105 @@
-[0.002][SEVERE]: bind() returned an error: Only one usage of each socket address (protocol/network address/port) is normally permitted. (0x2740)
-[0.003][WARNING]: Unknown error 10038 mapped to net::ERR_FAILED
+[0.495][INFO]: COMMAND InitSession {
+   "desiredCapabilities": {
+
+   },
+   "requiredCapabilities": {
+
+   }
+}
+[0.497][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[0.498][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[0.504][INFO]: Launching chrome: "C:\Users\ting\AppData\Local\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --ignore-certificate-errors --load-extension="C:\Users\ting\AppData\Local\Temp\scoped_dir3816_22132\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12078 --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\ting\AppData\Local\Temp\scoped_dir3816_6999" data:,
+[2.266][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "userDataDir": "C:\\Users\\ting\\AppData\\Local\\Temp\\scoped_dir3816_6999"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "platform": "Windows NT",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "version": "46.0.2490.6",
+   "webStorageEnabled": true
+}
+[2.267][INFO]: COMMAND Navigate {
+   "url": "http://www.baidu.com"
+}
+[2.267][INFO]: Waiting for pending navigations...
+[2.270][INFO]: Done waiting for pending navigations
+[3.084][INFO]: Waiting for pending navigations...
+[3.660][INFO]: Done waiting for pending navigations
+[3.660][INFO]: RESPONSE Navigate
+[13.661][INFO]: COMMAND Quit {
+
+}
+[13.740][INFO]: RESPONSE Quit
