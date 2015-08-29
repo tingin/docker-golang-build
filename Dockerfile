@@ -5,7 +5,8 @@
 # use the ubuntu base image provided by dotCloud
 FROM golang:1.5-onbuild
 
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub  
+RUN apt-key add linux_signing_key.pub
 RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list 
 RUN apt-get update 
 RUN apt-get -y install google-chrome-stable  
