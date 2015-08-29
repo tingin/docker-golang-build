@@ -13,6 +13,7 @@ before_script:
   - apt-get -y install google-chrome-stable
   - wget http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip -d /bin
+  - chmod +x /bin/chromedriver
   - mkdir -p /gopath/src/docker-golang-build
   - mv ./* /gopath/src/docker-golang-build
 
