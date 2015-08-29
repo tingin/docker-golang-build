@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fedesog/webdriver"
+	"github.com/tingin/webdriver"
 	"log"
 	"testing"
 )
@@ -13,6 +13,16 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
-
+	desired := webdriver.Capabilities{}
+	required := webdriver.Capabilities{}
+	session, err := chromeDriver.NewSession(desired, required)
+	if err != nil {
+		log.Println(err)
+	}
+	err = session.Url("http://www.baidu.com")
+	if err != nil {
+		log.Println(err)
+	}
+	session.Delete()
 	chromeDriver.Stop()
 }
