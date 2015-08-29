@@ -16,15 +16,15 @@ RUN apt-get install unzip
 RUN wget -q http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip
 RUN unzip chromedriver_linux64.zip -d /bin
 RUN chmod +x /bin/chromedriver
-RUN linuxversion=$(cat /etc/issue)
-RUN chromeverion=$(google-chrome -version)
-RUN driververison=$(chromedriver -v)
+RUN LINUXVERSION=`cat /etc/issue`
+RUN CHROMEVERION=`google-chrome -version`
+RUN DRIVERVERISON=`chromedriver -v`
 RUN mkdir -p /gopath/src/docker-golang-build
 RUN mv ./* /gopath/src/docker-golang-build
 RUN rm -rf /var/lib/apt/lists/*
 
-ENV LINUX_VERSION  $linuxversion
-ENV CHROME_VERSION $chromeverion
-ENV DRIVER_VERSION $driververison
+ENV LINUX_VERSION  $LINUXVERSION
+ENV CHROME_VERSION $CHROMEVERION
+ENV DRIVER_VERSION $DRIVERVERISON
 
 EXPOSE 8080
