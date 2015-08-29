@@ -11,6 +11,9 @@ before_script:
   - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
   - apt-get update
   - apt-get -y install google-chrome-stable
+  - apt-get install xvfb
+  - Xvfb :1 -screen 5 1024x768x8 &
+  - export DISPLAY=:1.5
   - wget -q http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip -d /bin
   - chmod +x /bin/chromedriver
@@ -19,7 +22,7 @@ before_script:
   - chromedriver -v
   - mkdir -p /gopath/src/docker-golang-build
   - mv ./* /gopath/src/docker-golang-build
-
+  - rm -rf /var/lib/apt/lists/*
 script:
   - export GOPATH=/gopath
   - go get -t docker-golang-build
