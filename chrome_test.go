@@ -8,6 +8,7 @@ import (
 )
 
 func TestChrome(t *testing.T) {
+	log.Println("start")
 	chromeDriver := webdriver.NewChromeDriver("chromedriver")
 	err := chromeDriver.Start()
 	if err != nil {
