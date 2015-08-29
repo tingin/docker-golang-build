@@ -13,8 +13,8 @@ before_script:
   - apt-get -y install google-chrome-stable
   - apt-get -y install xvfb
   - apt-get -y install xfonts-base x11-xkb-utils xfonts-cyrillic xfonts-100dpi xfonts-75dpi
-  - Xvfb :1 -screen 0 1024x768x8 &
-  - export DISPLAY=:1.5
+  - Xvfb :1 &
+  - export DISPLAY=:1
   - wget -q http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip -d /bin
   - chmod +x /bin/chromedriver
