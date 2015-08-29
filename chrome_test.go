@@ -19,7 +19,7 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
-	err = session.Url("http://www.baidu.com")
+	err = session.Url("http://www.safeuway.com/")
 	if err != nil {
 		log.Println(err)
 	}
