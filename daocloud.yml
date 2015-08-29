@@ -28,4 +28,3 @@ script:
   - export DISPLAY=:1
   - go get -t docker-golang-build
   - go test docker-golang-build
-  - cat chromedriver.log
