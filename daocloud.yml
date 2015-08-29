@@ -7,6 +7,9 @@ env:
 install:
 
 before_script:
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - dpkg -i google-chrome-stable_current_amd64.deb 
+  - rm -rf google-chrome-stable_current_amd64.deb
   - mkdir -p /gopath/src/docker-golang-build
   - mv ./* /gopath/src/docker-golang-build
 
