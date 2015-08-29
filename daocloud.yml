@@ -10,7 +10,7 @@ before_script:
   - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
   - apt-get update
-  - apt-get install google-chrome-stable
+  - apt-get -y install google-chrome-stable
   - mkdir -p /gopath/src/docker-golang-build
   - mv ./* /gopath/src/docker-golang-build
 
