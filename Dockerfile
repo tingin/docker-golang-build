@@ -12,6 +12,7 @@ RUN apt-get update
 RUN apt-get -y install google-chrome-stable  
 RUN apt-get -y install xvfb 
 RUN apt-get -y install xfonts-base x11-xkb-utils xfonts-cyrillic xfonts-100dpi xfonts-75dpi 
+RUN apt-get install unzip
 RUN wget -q http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip
 RUN unzip chromedriver_linux64.zip -d /bin
 RUN chmod +x /bin/chromedriver
