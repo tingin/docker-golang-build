@@ -13,7 +13,7 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
-	desired := webdriver.Capabilities{}
+	desired := webdriver.Capabilities{"Platform": "Linux"}
 	required := webdriver.Capabilities{}
 	session, err := chromeDriver.NewSession(desired, required)
 	if err != nil {
