@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/tingin/webdriver"
+	"github.com/fedesog/webdriver"
 	"log"
 	"testing"
 	"time"
