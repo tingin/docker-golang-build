@@ -4,7 +4,6 @@ import (
 	"github.com/fedesog/webdriver"
 	"log"
 	"testing"
-	"time"
 )
 
 func TestChrome(t *testing.T) {
