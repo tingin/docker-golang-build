@@ -24,7 +24,8 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
-	time.Sleep(10 * time.Second)
+	time.Sleep(15 * time.Second)
 	session.Delete()
 	chromeDriver.Stop()
+	log.Println("end")
 }
