@@ -10,7 +10,7 @@ before_script:
   - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
   - apt-get update
-  - apt-get -y install google-chrome-stable
+  - apt-get -y install google-chrome-stable 
   - apt-get -y install xvfb
   - apt-get -y install xfonts-base x11-xkb-utils xfonts-cyrillic xfonts-100dpi xfonts-75dpi
   - wget -q http://chromedriver.storage.googleapis.com/2.19/chromedriver_linux64.zip

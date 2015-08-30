@@ -4,6 +4,7 @@ import (
 	"github.com/tingin/webdriver"
 	"log"
 	"testing"
+	"time"
 )
 
 func TestChrome(t *testing.T) {
@@ -23,6 +24,7 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
+	time.Sleep(10 * time.Second)
 	session.Delete()
 	chromeDriver.Stop()
 }
