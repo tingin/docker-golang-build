@@ -9,7 +9,7 @@ import (
 
 func TestChrome(t *testing.T) {
 	log.Println("start")
-	chromeDriver := webdriver.NewChromeDriver("chromedriver")
+	chromeDriver := webdriver.NewChromeDriverRemote("http://127.0.0.1:9515")
 	err := chromeDriver.Start()
 	if err != nil {
 		log.Println(err)
@@ -24,8 +24,8 @@ func TestChrome(t *testing.T) {
 	if err != nil {
 		log.Println(err)
 	}
-	time.Sleep(15 * time.Second)
+	time.Sleep(10 * time.Second)
 	session.Delete()
-	chromeDriver.Stop()
+	//chromeDriver.Stop()
 	log.Println("end")
 }

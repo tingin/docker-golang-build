@@ -3,7 +3,7 @@
 # VERSION       1.0
 
 # use the ubuntu base image provided by dotCloud
-FROM golang:1.5-onbuild
+FROM golang:1.5
 
 RUN wget -q https://dl-ssl.google.com/linux/linux_signing_key.pub  
 RUN apt-key add linux_signing_key.pub
